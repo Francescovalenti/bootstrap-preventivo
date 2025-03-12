@@ -15,7 +15,7 @@ datiutentiinput.addEventListener("submit", function (event) {
     console.log("submit");
     const TipodiLavoro = TipodiLavoroinput.value;
     const CodicePromozionale = CodicePromozionaleinput.value;
-  
+
 
 
 
@@ -33,44 +33,34 @@ datiutentiinput.addEventListener("submit", function (event) {
         prezzoOrario = 33.60;
     }
 
-    let prezzoFinale = (Math.round(oreLavoro * prezzoOrario)).toFixed(2);
-        console.log(prezzoFinale);
+    let prezzoFinale = parseInt (Math.round(oreLavoro * prezzoOrario)).toFixed(2);
+    console.log(prezzoFinale);
 
     const scontiValidi = ["YHDNU32", "JANJC63", "PWKCN25", "SJDPO96", "POCIE24"]
-       
-       let codiceValido = false;
+
+    let codiceValido = false;
     for (let i = 0; i < scontiValidi.length; i++) {
         const eleSconti = scontiValidi[i];
-        
 
-       
-        if (eleSconti === CodicePromozionale ) {
+
+
+        if (eleSconti === CodicePromozionale) {
             codiceValido = true;
             let sconto = prezzoFinale * 25 / 100;
             prezzoFinale = prezzoFinale - sconto;
             console.log(prezzoFinale);
-            
-         }
-        
+
         }
-        if (codiceValido === false){
-            alert ("codice promozionale non valido");}
 
-            document.getElementById("prezzoFinale").innerHTML = `€ ${prezzoFinale}`
+    }
+    if (!codiceValido && CodicePromozionale !== "") {
+        alert("codice promozionale non valido");
+    }
 
-    
+    document.getElementById("prezzoFinale").innerHTML = `€ ${prezzoFinale}`
 
-
-
-    
-
-       
-        
-      
+})
 
 
-    })
 
-   
-    
 
