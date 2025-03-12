@@ -56,6 +56,8 @@ datiutentiinput.addEventListener("submit", function (event) {
         if (codiceValido === false){
             alert ("codice promozionale non valido");}
 
+            document.getElementById("prezzoFinale").innerHTML = `€ ${prezzoFinale}`
+
     
 
 
