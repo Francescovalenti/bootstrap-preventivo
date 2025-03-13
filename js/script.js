@@ -1,12 +1,18 @@
 // Raccolta dati
 const datiutentiinput = document.getElementById("datiutenti");
-const nome = document.getElementById("Nome");
-const inputcognome = document.getElementById("cognomeinput");
-const inputEmail = document.getElementById("emailinput");
 const TipodiLavoroinput = document.getElementById("TipodiLavoro");
-const DescrizioneLavoroinput = document.getElementById("DescrizioneLavoro");
 const CodicePromozionaleinput = document.getElementById("CodicePromozionale");
 const risultato = document.getElementById("risultato");
+
+TipodiLavoroinput.innerHTML = `
+<option selected>Seleziona il tipo di lavoro</option>
+<option value="Backend Development">Backend Development</option>
+<option value="Frontend Development">Frontend Development</option>
+<option value="Project Analysis">Project Analysis</option>
+`;
+
+
+
 
 
 
@@ -15,6 +21,9 @@ datiutentiinput.addEventListener("submit", function (event) {
     console.log("submit");
     const TipodiLavoro = TipodiLavoroinput.value;
     const CodicePromozionale = CodicePromozionaleinput.value;
+
+
+
 
 
 
@@ -33,7 +42,7 @@ datiutentiinput.addEventListener("submit", function (event) {
         prezzoOrario = 33.60;
     }
 
-    let prezzoFinale = parseInt (Math.round(oreLavoro * prezzoOrario)).toFixed(2);
+    let prezzoFinale = parseInt(Math.round(oreLavoro * prezzoOrario)).toFixed(2);
     console.log(prezzoFinale);
 
     const scontiValidi = ["YHDNU32", "JANJC63", "PWKCN25", "SJDPO96", "POCIE24"]
