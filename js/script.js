@@ -41,8 +41,8 @@ datiutentiinput.addEventListener("submit", function (event) {
     } else if (TipodiLavoro === "Project Analysis") {
         prezzoOrario = 33.60;
     }
-
-    let prezzoFinale = parseInt(Math.round(oreLavoro * prezzoOrario)).toFixed(2);
+   
+    let prezzoFinale =  (Math.round(oreLavoro * prezzoOrario)).toFixed(2);
     console.log(prezzoFinale);
 
     const scontiValidi = ["YHDNU32", "JANJC63", "PWKCN25", "SJDPO96", "POCIE24"]
