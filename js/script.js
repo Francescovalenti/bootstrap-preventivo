@@ -32,6 +32,7 @@ datiutentiinput.addEventListener("submit", function (event) {
 
     const oreLavoro = 10;
     let prezzoOrario = 0;
+    
 
 
     if (TipodiLavoro === "Backend Development") {
@@ -42,8 +43,10 @@ datiutentiinput.addEventListener("submit", function (event) {
         prezzoOrario = 33.60;
     }
    
-    let prezzoFinale =  (Math.round(oreLavoro * prezzoOrario)).toFixed(2);
+    let prezzoFinalestr =  (Math.round(oreLavoro * prezzoOrario)).toFixed(2);
+    prezzoFinale= parseInt (prezzoFinalestr);
     console.log(prezzoFinale);
+    
 
     const scontiValidi = ["YHDNU32", "JANJC63", "PWKCN25", "SJDPO96", "POCIE24"]
 
@@ -55,8 +58,8 @@ datiutentiinput.addEventListener("submit", function (event) {
 
         if (eleSconti === CodicePromozionale) {
             codiceValido = true;
-            let sconto = prezzoFinale * 25 / 100;
-            prezzoFinale = prezzoFinale - sconto;
+            let sconto = prezzoFinalestr * 25 / 100;
+            prezzoFinale = prezzoFinalestr - sconto;
             console.log(prezzoFinale);
 
         }
