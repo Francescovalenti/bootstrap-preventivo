@@ -46,6 +46,8 @@ datiutentiinput.addEventListener("submit", function (event) {
     let prezzoFinalestr =  (Math.round(oreLavoro * prezzoOrario)).toFixed(2);
     prezzoFinale= parseInt (prezzoFinalestr);
     console.log(prezzoFinale);
+
+   
     
 
     const scontiValidi = ["YHDNU32", "JANJC63", "PWKCN25", "SJDPO96", "POCIE24"]
@@ -70,6 +72,8 @@ datiutentiinput.addEventListener("submit", function (event) {
     }
 
     document.getElementById("prezzoFinale").innerHTML = `€ ${prezzoFinale}`
+
+    datiutenti.reset();
 
 })
 
