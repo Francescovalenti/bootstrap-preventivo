@@ -71,7 +71,7 @@ datiutentiinput.addEventListener("submit", function (event) {
         alert("codice promozionale non valido");
     }
 
-    document.getElementById("prezzoFinale").innerHTML = `€ ${prezzoFinale}`
+    document.getElementById("risultato").innerHTML = `€ ${prezzoFinale}`
 
     datiutenti.reset();
 
