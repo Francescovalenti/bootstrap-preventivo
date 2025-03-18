@@ -44,7 +44,7 @@ datiutentiinput.addEventListener("submit", function (event) {
     }
    
     let prezzoFinalestr =  (Math.round(oreLavoro * prezzoOrario)).toFixed(2);
-    prezzoFinale= parseInt (prezzoFinalestr);
+    prezzoFinale= parseFloat (prezzoFinalestr);
     console.log(prezzoFinale);
 
    
