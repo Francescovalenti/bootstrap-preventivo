@@ -75,7 +75,9 @@ datiutentiinput.addEventListener("submit", function (event) {
         }
 
     }
-    // codice per mostrare quando il codice non è valido oppure non viene inserito nulla.
+    // codice per mostrare quando lo sconto
+    // 
+    //  non è valido oppure non viene inserito nulla nel form.
        if (!codiceValido && CodicePromozionale !== "") {
         alert("codice promozionale non valido");
       
