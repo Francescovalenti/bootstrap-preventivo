@@ -4,12 +4,17 @@ const TipodiLavoroinput = document.getElementById("TipodiLavoro");
 const CodicePromozionaleinput = document.getElementById("CodicePromozionale");
 const risultato = document.getElementById("risultato");
 
+
+
+
 TipodiLavoroinput.innerHTML = `
 <option selected>Seleziona il tipo di lavoro</option>
 <option value="Backend Development">Backend Development</option>
 <option value="Frontend Development">Frontend Development</option>
 <option value="Project Analysis">Project Analysis</option>
 `;
+
+
 
 
 

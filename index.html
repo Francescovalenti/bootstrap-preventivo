@@ -16,7 +16,7 @@
 <body>
     <!-- inizio costruzione della barra -->
     <header>
-        <nav class="navbar navbar-expand-lg bg-body-tertiary  " data-bs-theme="dark">
+        <nav class="navbar navbar-expand-md bg-body-tertiary  " data-bs-theme="dark">
             <div class="container">
                 <a class="navbar-brand " href="#">Bool Factory</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
@@ -34,7 +34,6 @@
                         <li class="nav-item">
                             <a class="nav-link" href="#">Contatti</a>
                         </li>
-
                     </ul>
                 </div>
             </div>
@@ -48,7 +47,7 @@
 
 
 
-            <form class="row  " id="datiutenti" >
+            <form class="row  " id="datiutenti">
                 <div class="col-lg-9 col-sm-12 ">
                     <!-- titolo principale -->
                     <p class="h1 "> Richiesta Preventivo </p>
@@ -68,16 +67,17 @@
                         <label for="inputEmail" class="form-label ">Email</label>
                         <input type="email" class="form-control" id="inputEmail">
                     </div>
-                     <div class="mb-3" >
+                    <div class="mb-3">
                         <label for="TipodiLavoro" class="form-label ">Tipo di Lavoro</label>
-                        <select class="form-select form-select-lg " aria-label="default select example" id="TipodiLavoro">
-                            
+                        <select class="form-select form-select-lg " aria-label="default select example"
+                            id="TipodiLavoro">
+
                             <!-- <option selected>Seleziona il tipo di lavoro</option>
                              <option value="Backend Development">Backed Development</option>
                             <option value="Frontend Development">Frontend Development</option>
-                            <option value="Project Analysis">Project Analysis</option> --> 
-                        </select> 
-                    </div> 
+                            <option value="Project Analysis">Project Analysis</option> -->
+                        </select>
+                    </div>
                     <div class="mb-3">
                         <label for="DescrizioneLavoro" class="form-label ">Descrivi il lavoro che vuoi
                             richiedere</label>
@@ -100,7 +100,7 @@
 
                     <div class="flex-container flex-nowrap">
                         <div class="d-flex flex-column flex-lg-row align-items-center text-center">
-                            <button type="submit" class="btn btn-primary mx-5  btn-lg  ">Calcola preventivo</button> 
+                            <button type="submit" class="btn btn-primary mx-5  btn-lg  ">Calcola preventivo</button>
                             <div class="py-4">
                                 <h4 class="px-5 mx-5"><strong>Prezzo Finale </strong></h4>
                                 <h3 class="px-5 mx-5" id="risultato"><strong>&euro; </strong></h3>
@@ -110,10 +110,10 @@
                 </div>
 
 
-                
+
                 <div class="col-lg-3 col-12  ">
-                    <div class="card " >
-                        <img  src="./OIP.jpeg" class="card-img-top" alt="...">
+                    <div class="card ">
+                        <img src="./OIP.jpeg" class="card-img-top" alt="...">
                         <div class="card-body">
                             <h4 class="card-title">I nostri contatti</h4>
                             <p class="card-text">Se hai bisogno di aiuto puoi contattarci:</p>
@@ -149,10 +149,13 @@
 
     </footer>
     <!-- fine costruzione footer -->
+    <script src="js/script.js"></script>
+
+
 </body>
 
 
 
-<script src="js/script.js"></script>
+
 
 </html>
