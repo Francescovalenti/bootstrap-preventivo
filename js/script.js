@@ -57,7 +57,7 @@ datiutentiinput.addEventListener("submit", function (event) {
     
 
     const scontiValidi = ["YHDNU32", "JANJC63", "PWKCN25", "SJDPO96", "POCIE24"]
-
+    //calcolo codice
     let codiceValido = false;
     for (let i = 0; i < scontiValidi.length; i++) {
         const eleSconti = scontiValidi[i];
@@ -69,12 +69,17 @@ datiutentiinput.addEventListener("submit", function (event) {
             let sconto = prezzoFinalestr * 25 / 100;
             prezzoFinale = prezzoFinalestr - sconto;
             console.log(prezzoFinale);
+           
+            
 
         }
 
     }
+    // codice per mostrare quando il codice non è valido oppure non viene inserito nulla.
        if (!codiceValido && CodicePromozionale !== "") {
         alert("codice promozionale non valido");
+      
+        
     }
 
     document.getElementById("risultato").innerHTML = `€ ${prezzoFinale.toFixed(2)}`;
