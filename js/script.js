@@ -7,6 +7,7 @@ const risultato = document.getElementById("risultato");
 
 
 
+
 TipodiLavoroinput.innerHTML = `
 <option selected>Seleziona il tipo di lavoro</option>
 <option value="Backend Development">Backend Development</option>
@@ -72,13 +73,14 @@ datiutentiinput.addEventListener("submit", function (event) {
         }
 
     }
-    if (!codiceValido && CodicePromozionale !== "") {
+       if (!codiceValido && CodicePromozionale !== "") {
         alert("codice promozionale non valido");
     }
 
-    document.getElementById("risultato").innerHTML = `€ ${prezzoFinale.toFixed(2)}`;
+    document.getElementById("risultato").innerHTML = `${prezzoFinale.toFixed(2)}€`;
 
     datiutenti.reset();
+    
 
 })
 
